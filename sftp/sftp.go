@@ -15,7 +15,7 @@ import (
 	"golang.org/x/crypto/ssh"
 )
 
-const bufSize = 1024
+const bufSize = 1 << 20 //1M
 
 var ErrSftpClientIsNil = errors.New("sftp client is nil")
 
